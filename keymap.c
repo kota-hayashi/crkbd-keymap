@@ -53,7 +53,6 @@ enum macro_keycodes {
 #define KC_LVAI  RGB_VAI
 #define KC_LVAD  RGB_VAD
 #define KC_LMOD  RGB_MOD
-#define KC_CTLTB CTL_T(KC_TAB)
 #define KC_CTLESC CTL_T(KC_ESC)
 #define KC_GUIEI GUI_T(KC_LANG2)
 #define KC_ALTKN ALT_T(KC_LANG1)
@@ -73,9 +72,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,  UNDS,  PLUS,  LBRC,  RBRC,  PIPE,                  XXXXX,     7,     8,     9,  MINS,  BSPC,\
+        TAB,  UNDS,  PLUS,  LBRC,  RBRC,  PIPE,                  XXXXX,     7,     8,     9,  MINS,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB,  MINS,   EQL,  LCBR,  RCBR,  BSLS,                    DOT,     4,     5,     6,  PLUS, XXXXX,\
+     CTLESC,  MINS,   EQL,  LCBR,  RCBR,  BSLS,                    DOT,     4,     5,     6,  PLUS, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,  MRWD,  MPLY,  MFFD,_VOLDOWN,_VOLUP,                    0,     1,     2,     3,  ASTR,  SLSH,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
@@ -85,9 +84,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
+        TAB,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,   F11,\
+     CTLESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,   F11,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10,   F12,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
