@@ -72,9 +72,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB,  UNDS,  PLUS,  LBRC,  RBRC,  PIPE,                  XXXXX,     7,     8,     9,  MINS,  BSPC,\
+        TAB,  UNDS,  PLUS,  LCBR,  RCBR,  PIPE,                  XXXXX,     7,     8,     9,  MINS,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-     CTLESC,  MINS,   EQL,  LCBR,  RCBR,  BSLS,                    DOT,     4,     5,     6,  PLUS, XXXXX,\
+     CTLESC,  MINS,   EQL,  LBRC,  RBRC,  BSLS,                    DOT,     4,     5,     6,  PLUS, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,  MRWD,  MPLY,  MFFD,_VOLDOWN,_VOLUP,                    0,     1,     2,     3,  ASTR,  SLSH,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
